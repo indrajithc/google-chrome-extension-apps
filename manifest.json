@@ -1,0 +1,16 @@
+{
+  "name": "Search in WiKi",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Third google chrome extension application",
+  "icons": {
+    "128": "./assets/icon/icon-128.png",
+    "64": "./assets/icon/icon-64.png",
+    "16": "./assets/icon/icon-16.png"
+  },
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+  "permissions": ["tabs", "contextMenus"]
+}
