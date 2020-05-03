@@ -1,4 +1,7 @@
-### Search WiKi Google Chrome Extension
+### Google Chrome Extension Apps
+
+- **Search WiKi** branch `apps/IC_SearchInWiki`
+  - This extension is used to search selected text from current website to directly in wikipedia page. Search in wiki menu item will appear in context menu when a particular text selected, similar to 'Search in google option'.
 
 contents copied from https://www.sitepoint.com/create-chrome-extension-10-minutes-flat/
 
