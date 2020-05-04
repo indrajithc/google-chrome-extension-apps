@@ -1,16 +1,22 @@
 {
-  "name": "Speak It",
+  "name": "Test App",
   "manifest_version": 2,
   "version": "1.0",
-  "description": "Fourth google chrome extension application",
+  "description": "Testing miscellaneous functionalities google chrome extension application",
   "icons": {
-    "128": "./assets/icon/speaker-128.png",
-    "64": "./assets/icon/speaker-64.png",
-    "16": "./assets/icon/speaker-16.png"
+    "128": "./assets/icon/github-128.png",
+    "48": "./assets/icon/github-48.png",
+    "16": "./assets/icon/github-16.png"
   },
-  "background": {
-    "scripts": ["eventPage.js"],
-    "persistent": false
-  },
-  "permissions": ["tts", "contextMenus"]
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Count word",
+    "default_icon": "/assets/icon/github-48.png"
+  }
 }
